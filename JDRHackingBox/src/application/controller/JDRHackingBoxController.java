@@ -31,7 +31,7 @@ public class JDRHackingBoxController {
 		compareText = compareText.replace("\b", "");
 		for (char c : compareText.toCharArray()) {
 			if ((!Utils.letters.contains(Character.valueOf(c))) && (c != '\b')) {
-				event.consume();
+				event.consume(); 
 				return;
 			}
 		}
